@@ -17,6 +17,7 @@ public class FlightBookingTest
 
     @Test
     public void testing_Setting_Up_Booking_Class_Using_Enum() {
+        
         FlightBooking.BookingClass bookingClass = FlightBooking.BookingClass.FIRST;
         assertEquals(FlightBooking.BookingClass.valueOf("FIRST"), bookingClass);
     }
