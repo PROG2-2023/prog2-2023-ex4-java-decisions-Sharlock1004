@@ -376,7 +376,7 @@ public LocalDate getReturnDate(){
 //task 7
 Random random=new Random();
 public String ticketNumber="11FASDFDOM";
-public void setTicketNumber(String tickertNumber){
+public String getTicketNumber(){
   switch(tripType){
     case ONE_WAY:
     ticketNumber="11";
@@ -437,11 +437,11 @@ public void setTicketNumber(String tickertNumber){
   if (tripSource == TripSource.HELSINKI && tripDestination == TripDestination.BEIJING) {
       this.ticketNumber = ticketNumber + "INT";
   }
-
+return ticketNumber;
 }
-public String getTicketNumber(){
-  return ticketNumber;
-}
+// public String getTicketNumber(){
+//   return ticketNumber;
+// }
 
 
 
